@@ -1,0 +1,9 @@
+<div class="menu">
+    {{#if session.isAuthenticated}}
+        <a {{action 'invalidateSession'}}>Logout</a>
+    {{/if}}
+</div>
+<h1>Revyoomee</h1>
+<div class="main">
+    {{outlet}}
+</div>
